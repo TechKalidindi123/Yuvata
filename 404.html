@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e8ebf0" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found | YUVA-TA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">YUVA<span>-TA</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Programs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html" class="btn btn-primary">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <p class="section-kicker">404</p>
+      <h1>That page could not be found</h1>
+      <p class="stack-gap">The link may be wrong or the page may have moved.</p>
+      <p class="stack-gap"><a class="btn btn-primary" href="index.html">Back to home</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">YUVA<span>-TA</span></div>
+        <p class="footer-tagline">
+          Youth development for young Telugu Americans—Livingston, North New Jersey, and friends of our community everywhere.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Programs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@yuva-ta.org">hello@yuva-ta.org</a></li>
+          <li>Livingston &amp; North NJ</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© <span id="y"></span> YUVA-TA. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    var el = document.getElementById("y");
+    if (el) el.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e8ebf0" />
   <meta name="description" content="Donate to YUVA-TA and fund youth programs, cultural events, and family support in North New Jersey." />
   <title>Donate | YUVA-TA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="logo" href="index.html">YUVA<span>-TA</span></a>
@@ -27,77 +30,79 @@
     </div>
   </header>
 
-  <div class="page-hero">
-    <p class="section-kicker">Give</p>
-    <h1>Fuel confident, caring leaders</h1>
-    <p>
-      Your donation powers cultural celebrations, leadership workshops, tutoring, mental health programming, and emergency support for families. YUVA-TA is grateful for every gift.
-    </p>
-  </div>
+  <main id="main">
+    <div class="page-hero">
+      <p class="section-kicker">Give</p>
+      <h1>Fuel confident, caring leaders</h1>
+      <p>
+        Your donation powers cultural celebrations, leadership workshops, tutoring, mental health programming, and emergency support for families. YUVA-TA is grateful for every gift.
+      </p>
+    </div>
 
-  <div class="donate-hero-img">
-    <figure>
-      <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1600&q=85" alt="Hands coming together in a gesture of giving and community" width="1600" height="500" loading="lazy" />
-    </figure>
-  </div>
+    <div class="donate-hero-img">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Hands coming together in a gesture of giving and community" width="1600" height="500" loading="lazy" decoding="async" />
+      </figure>
+    </div>
 
-  <section class="section" style="padding-top: 0;">
-    <div class="section-inner donate-grid">
-      <div class="donate-card">
-        <h2>Make a gift</h2>
-        <p style="color: var(--color-text-muted); margin-top: 0;">
-          Choose an amount to start an email to our team with your intent. We will follow up with secure payment options (card, ACH, or check) and a tax acknowledgment.
-        </p>
-        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">
-          When you are ready for instant online card processing, your administrator can drop in a Stripe, PayPal, Zeffy, or Give Lively link on this page.
-        </p>
-        <div class="donate-amounts" role="group" aria-label="Suggested donation amounts">
-          <button type="button" class="amount-pill" data-amount="25">$25</button>
-          <button type="button" class="amount-pill" data-amount="50">$50</button>
-          <button type="button" class="amount-pill" data-amount="100">$100</button>
-          <button type="button" class="amount-pill" data-amount="250">$250</button>
-          <button type="button" class="amount-pill" data-amount="500">$500</button>
+    <section class="section section--flush-top">
+      <div class="section-inner donate-grid">
+        <div class="donate-card">
+          <h2>Make a gift</h2>
+          <p class="donate-intro">
+            Choose an amount to start an email to our team with your intent. We will follow up with secure payment options (card, ACH, or check) and a tax acknowledgment.
+          </p>
+          <p class="donate-hint">
+            When you are ready for instant online card processing, your administrator can drop in a Stripe, PayPal, Zeffy, or Give Lively link on this page.
+          </p>
+          <div class="donate-amounts" role="group" aria-label="Suggested donation amounts">
+            <button type="button" class="amount-pill" data-amount="25">$25</button>
+            <button type="button" class="amount-pill" data-amount="50">$50</button>
+            <button type="button" class="amount-pill" data-amount="100">$100</button>
+            <button type="button" class="amount-pill" data-amount="250">$250</button>
+            <button type="button" class="amount-pill" data-amount="500">$500</button>
+          </div>
+          <a id="donate-mailto" class="btn btn-primary" href="mailto:hello@yuva-ta.org?subject=YUVA-TA%20donation&amp;body=Hello%20YUVA-TA%2C%0A%0AI%20would%20like%20to%20donate%20%24____.%0A%0AThank%20you!">Email to complete your donation</a>
+          <p class="donate-note">
+            YUVA-TA is a nonprofit organization; consult a tax advisor regarding deductibility. EIN can be provided on request.
+          </p>
         </div>
-        <a id="donate-mailto" class="btn btn-primary" href="mailto:hello@yuva-ta.org?subject=YUVA-TA%20donation&amp;body=Hello%20YUVA-TA%2C%0A%0AI%20would%20like%20to%20donate%20%24____.%0A%0AThank%20you!">Email to complete your donation</a>
-        <p class="donate-note">
-          YUVA-TA is a nonprofit organization; consult a tax advisor regarding deductibility. EIN can be provided on request.
-        </p>
+        <div class="donate-card donate-card--accent">
+          <h2>Your impact</h2>
+          <ul class="impact-list">
+            <li><strong>$25</strong> <span>Supplies for one student leadership workshop</span></li>
+            <li><strong>$75</strong> <span>Meals and materials for a community service outing</span></li>
+            <li><strong>$150</strong> <span>Scholarship-style support for a family program fee</span></li>
+            <li><strong>$500+</strong> <span>Sponsor a cultural performance or guest speaker series</span></li>
+          </ul>
+          <p class="fine-print stack-gap">
+            Prefer to mail a check? Send payable to <strong>YUVA-TA</strong> to the address we provide when you email <a href="mailto:hello@yuva-ta.org">hello@yuva-ta.org</a>.
+          </p>
+        </div>
       </div>
-      <div class="donate-card" style="background: linear-gradient(160deg, var(--color-surface) 0%, rgba(0, 201, 167, 0.08) 100%);">
-        <h2>Your impact</h2>
-        <ul class="impact-list">
-          <li><strong>$25</strong> <span>Supplies for one student leadership workshop</span></li>
-          <li><strong>$75</strong> <span>Meals and materials for a community service outing</span></li>
-          <li><strong>$150</strong> <span>Scholarship-style support for a family program fee</span></li>
-          <li><strong>$500+</strong> <span>Sponsor a cultural performance or guest speaker series</span></li>
-        </ul>
-        <p style="margin: 1.5rem 0 0; color: var(--color-text-muted); font-size: 0.95rem;">
-          Prefer to mail a check? Send payable to <strong style="color: var(--color-text);">YUVA-TA</strong> to the address we provide when you email <a href="mailto:hello@yuva-ta.org">hello@yuva-ta.org</a>.
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section band">
-    <div class="section-inner split">
-      <div>
-        <p class="section-kicker">Transparency</p>
-        <h2 class="section-title" style="margin-top: 0;">Donations &amp; fundraising programs</h2>
-        <p style="color: var(--color-text-muted); margin: 0;">
-          As outlined in our service plan, YUVA-TA runs online donation campaigns, charity events, sponsorship opportunities, and community fundraising drives. Donors receive updates on programs funded and stories from youth participants (with permission).
-        </p>
+    <section class="section band">
+      <div class="section-inner split">
+        <div>
+          <p class="section-kicker">Transparency</p>
+          <h2 class="section-title">Donations &amp; fundraising programs</h2>
+          <p class="text-muted mb-0">
+            As outlined in our service plan, YUVA-TA runs online donation campaigns, charity events, sponsorship opportunities, and community fundraising drives. Donors receive updates on programs funded and stories from youth participants (with permission).
+          </p>
+        </div>
+        <div class="split-visual split-visual--start">
+          <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Volunteers at a community painting project" width="1200" height="900" loading="lazy" decoding="async" />
+        </div>
       </div>
-      <div class="split-visual">
-        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=85" alt="Volunteers at a community painting project" width="1200" height="900" loading="lazy" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="cta-strip">
-    <h2>Questions about corporate matching or sponsorships?</h2>
-    <p>We welcome workplace giving, event sponsorships, and in-kind gifts that align with our mission.</p>
-    <a class="btn btn-outline" href="mailto:hello@yuva-ta.org?subject=Sponsorship%20%2F%20matching%20gifts">Talk to our team</a>
-  </div>
+    <div class="cta-strip">
+      <h2>Questions about corporate matching or sponsorships?</h2>
+      <p>We welcome workplace giving, event sponsorships, and in-kind gifts that align with our mission.</p>
+      <a class="btn btn-outline" href="mailto:hello@yuva-ta.org?subject=Sponsorship%20%2F%20matching%20gifts">Talk to our team</a>
+    </div>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
@@ -128,29 +133,31 @@
   </footer>
   <script src="js/main.js"></script>
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-    var mail = document.getElementById("donate-mailto");
-    function setAmount(n) {
-      var body =
-        "Hello YUVA-TA,%0A%0AI would like to donate $" +
-        n +
-        ".%0A%0APlease send secure payment instructions.%0A%0AThank you!";
-      mail.setAttribute(
-        "href",
-        "mailto:hello@yuva-ta.org?subject=YUVA-TA%20donation&body=" + body
-      );
-    }
-    document.querySelectorAll(".amount-pill").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        setAmount(btn.getAttribute("data-amount"));
-        document.querySelectorAll(".amount-pill").forEach(function (b) {
-          b.style.borderColor = "";
-          b.style.background = "";
+    (function () {
+      var el = document.getElementById("y");
+      if (el) el.textContent = new Date().getFullYear();
+      var mail = document.getElementById("donate-mailto");
+      if (!mail) return;
+      function setAmount(n) {
+        var body =
+          "Hello YUVA-TA,%0A%0AI would like to donate $" +
+          n +
+          ".%0A%0APlease send secure payment instructions.%0A%0AThank you!";
+        mail.setAttribute(
+          "href",
+          "mailto:hello@yuva-ta.org?subject=YUVA-TA%20donation&body=" + body
+        );
+      }
+      document.querySelectorAll(".amount-pill").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          setAmount(btn.getAttribute("data-amount"));
+          document.querySelectorAll(".amount-pill").forEach(function (b) {
+            b.classList.remove("amount-pill--selected");
+          });
+          btn.classList.add("amount-pill--selected");
         });
-        btn.style.borderColor = "var(--color-primary)";
-        btn.style.background = "var(--color-primary-soft)";
       });
-    });
+    })();
   </script>
 </body>
 </html>
